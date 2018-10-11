@@ -17,19 +17,19 @@ class Table extends Component {
           </thead>
           <tbody>
             {
-              store.employeeList.map( (employee,index) =>
+              store.employeeList.map((employee, index) =>
                 <Row
                   key={index}
                   data={employee}
                 />
-                
-            )}
+
+              )}
           </tbody>
           <tfoot>
-              <tr>
-                <td>Media:</td>
-                <td>{store.averageSalary}</td>
-              </tr>
+            <tr>
+              <td>Media:</td>
+              <td>{store.averageSalary}</td>
+            </tr>
           </tfoot>
         </table>
       </div>

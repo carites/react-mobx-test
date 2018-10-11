@@ -5,10 +5,9 @@ import { observer } from 'mobx-react'
 class Controls extends Component {
 
   addEmployee = () => {
-    const name = prompt("Insert employee name","Name")
-    const salary = parseInt(prompt("Insert employee salary","0"),10)
-    const employee = {name,salary}
-    console.log(employee)
+    const name = prompt("Insert employee name", "Name")
+    const salary = parseInt(prompt("Insert employee salary", "0"), 10)
+    const employee = { name, salary }
     this.props.store.addEmployee(employee)
   }
 
